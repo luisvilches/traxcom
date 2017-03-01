@@ -70,3 +70,8 @@ form{
 .colorNav{
 	background: #4d9bd0;
 }
+
+iframe{
+	margin: 0 auto;
+	display: block;
+}
