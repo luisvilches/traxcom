@@ -3,11 +3,107 @@
   <head>
     <meta charset="utf-8">
     <title>traxcom</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
   </head>
-  <body id="app">
-    <header>
-    	<img src="./img/header.png" alt="">
+  <body>
+    <header id="app">
+    	<nav class="navbar navbar-default visible-xs visible-sm navbar-fixed-top colorNav">
+		  	<div class="container-fluid">
+		    	<div class="navbar-header">
+		      		<a class="navbar-brand" href="#"><img src="./img/header.png" alt=""></a>
+		    	</div>
+		   	</div>
+		</nav>
+
+    	<img src="./img/header.png" alt="" id="img-header" class="visible-lg visible-md">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-4"></div>
+    			<div class="col-md-4"></div>
+    			<div class="col-md-4">
+    				<h2 id="whatsapp" class="text-right"><span class="fa fa-whatsapp" aria-hidden="true"></span> +56 9 8888 8888</h2>
+    				<form action="">
+    					<input type="text" class="form-control" placeholder="TU NOMBRE">
+    					<input type="text" class="form-control inlineblock" placeholder="TU CORREO">
+    					<input type="text" class="form-control inlineblock" placeholder="TU TELEFONO">
+    					<textarea name="" id="" cols="20" rows="5" class="form-control" placeholder="ENVIAME UN MENSAJE"></textarea>
+    					<br>
+    					<input type="submit" value="enviar" class="btn btn-primary form-control">
+    				</form>
+    			</div>
+    		</div>
+    	</div>
+
     </header>
+    <section id="servicios">
+    	<div class="container-fluid text-center">
+    		<div class="row">
+    			<div class="col-md-12">
+    				<h3 class="text-center">NUESTROS SERVICIOS</h3>
+    			</div>
+    			<div class="col-md-4">
+    				<ul>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+    				</ul>
+    			</div>
+    			<div class="col-md-4">
+    				<ul>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+    				</ul>
+    			</div>
+    			<div class="col-md-4">
+    				<ul>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+    <section>
+    	<h2>video</h2>
+    </section>
+    <footer style="padding-top: 23px;">
+    	<div class="container-fluid">
+    		<div class="row">
+    			<div class="col-md-4">
+    				<ul>
+    					<h3>CONTACTOS</h3>
+    					<br>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Esteban Santander / Gerente de Ingenieria <br> esantander@traxcom.cl <br> Cel: (+56 9) 9440 3491</li>
+    					<br>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Marco Mora / Gerente de Operaciones <br> mmora@traxcom.cl <br> Cel: (+56 9) 6122 0845</li>
+    					<br>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Constanza Faundez / Gerente Comercial <br> cfaundez@traxcom.cl <br> Cel: (+56 9) 4213 9545</li>
+    					<br>
+    				</ul>
+    			</div>
+    			<div class="col-md-4">
+    				<ul>
+    					<h3>UBICACION</h3>
+    					<br>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Av. Vicuña Mackenna Poniente <br> Nº 7255 Of 707 <br> La Florida / Santiago</li>
+    				</ul>
+    			</div>
+    		</div>
+    	</div>
+    </footer>
     <script src="/dist/build.js"></script>
   </body>
 </html>

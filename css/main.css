@@ -1,0 +1,72 @@
+#img-header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	max-width: 500px;
+	z-index: 2000;
+}
+
+header{
+	background: #3498db;
+}
+
+section{
+	padding: 100px;
+}
+
+footer{
+	background: #0075a4 url(../img/footer.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	min-height: 280px;
+}
+footer ul li{
+	list-style: none;
+	color: #fff;
+}
+
+footer ul h3 {
+	color: #fff;
+}
+
+.inlineblock{
+	display: inline-block;
+	float: left;
+	max-width: 50%;
+}
+
+form input[type="text"]{
+	margin-bottom: 10px;
+}
+
+form{
+	margin-bottom: 20px;
+}
+
+#whatsapp{
+	margin-top: 50px;
+	color: #fff;
+}
+
+#servicios h3 {
+	color: #006191;
+	margin-bottom: 60px;
+}
+
+#servicios ul li {
+	list-style: none;
+	padding-top: 10px;
+	margin-left: -40px;
+}
+
+.navbar-brand img{
+	max-width: 68px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.colorNav{
+	background: #4d9bd0;
+}
