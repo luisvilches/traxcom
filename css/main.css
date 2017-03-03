@@ -82,7 +82,7 @@ form{
 	margin-top: 50px;
 	color: #fff;
 }
-#servicios h2,#servicios2 h2{
+#servicios h2,#servicios2 h2,#video h2{
 	line-height: 0px;
 	color: #006191;
 }
@@ -93,7 +93,7 @@ form{
 }
 #servicios h4,#servicios2 h4{
 	margin-bottom: 40px;
-	font-size: 17px;
+	font-size: 16px;
 }
 
 #servicios p, #servicios2 p {
@@ -101,15 +101,28 @@ form{
 	margin-bottom: 60px;
 	color: #555;
 }
+#video h2{
+	margin-bottom: 100px;
+}
 #video h3 {
 	color: #006191;
-	margin-bottom: 60px;
-	background-attachment: fixed;
+	text-align: center;
+}
+#video p{
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#video img{
+	height: 170px;
+    margin: 0 auto;
+    display: block;
+    width: 170px;
 }
 
 #servicios ul li,#servicios2 ul li {
 	list-style: none;
-	padding-top: 20px;
+	padding-top: 10px;
 	margin-left: -40px;
 	color: #555;
 	font-family: 'Open Sans', sans-serif;
