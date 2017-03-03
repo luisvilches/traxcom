@@ -3,34 +3,64 @@
   <head>
     <meta charset="utf-8">
     <title>traxcom</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link rel="stylesheet" href="css/animations.min.css">
   </head>
   <body>
     <header id="app">
-    	<nav class="navbar navbar-default visible-xs visible-sm navbar-fixed-top colorNav">
-		  	<div class="container-fluid">
-		    	<div class="navbar-header">
-		      		<a class="navbar-brand" href="#"><img src="./img/header.png" alt=""></a>
-		    	</div>
-		   	</div>
-		</nav>
+    	<img src="./img/header.png" alt="" id="img-header" class="">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          </ol>
 
-    	<img src="./img/header.png" alt="" id="img-header" class="visible-lg visible-md">
-    	<div class="container">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="img/carrusel1.jpg" class="img-resposive" alt="...">
+            </div>
+            <div class="item">
+              <img src="img/carrusel2.jpg" class="img-resposive" alt="...">
+            </div>
+            <div class="item">
+              <img src="img/carrusel3.jpg" class="img-resposive" alt="...">
+            </div>
+            <div class="item">
+              <img src="img/carrusel4.jpg" class="img-resposive" alt="...">
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only" style="z-index: 4000">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only" style="z-index: 4000">Next</span>
+          </a>
+        </div>
+    	<div class="container colSub">
     		<div class="row">
     			<div class="col-md-4"></div>
     			<div class="col-md-4"></div>
     			<div class="col-md-4">
     				<h2 id="whatsapp" class="text-right"><span class="fa fa-whatsapp" aria-hidden="true"></span> +56 9 8888 8888</h2>
-    				<form action="">
-    					<input type="text" class="form-control" placeholder="TU NOMBRE">
-    					<input type="text" class="form-control inlineblock" placeholder="TU CORREO">
-    					<input type="text" class="form-control inlineblock" placeholder="TU TELEFONO">
-    					<textarea name="" id="" cols="20" rows="5" class="form-control" placeholder="ENVIAME UN MENSAJE"></textarea>
+    				<form action="" id="formContacto" method="post">
+    					<input name="nombre" type="text" id="nombre" class="form-control radiusTop" placeholder="TU NOMBRE">
+    					<input name="correo" type="email" id="correo" class="form-control inlineblock radiud0" placeholder="TU CORREO">
+    					<input name="telefono" type="tel" id="telefono" class="form-control inlineblock radiud0" placeholder="TU TELEFONO">
+    					<textarea name="mensaje" id="mensaje" cols="20" rows="5" class="form-control" placeholder="ENVIAME UN MENSAJE"></textarea>
     					<br>
-    					<input type="submit" value="enviar" class="btn btn-primary form-control">
+    					<input type="submit" value="Enviar" class="bt default form-control">
     				</form>
     			</div>
     		</div>
@@ -42,41 +72,99 @@
     		<div class="row">
     			<div class="col-md-12">
     				<h3 class="text-center">NUESTROS SERVICIOS</h3>
+                    <h2 class="text-center">SERVICIOS EN TERRENO</h2>
+                    <br>
+                    <p class="text-center">Se cuenta con equipamiento y personal calificado para realizar las siguientes pruebas en sitio:</p>
     			</div>
     			<div class="col-md-4">
-    				<ul>
-    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
-    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
-    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
-    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
-    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
-    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+                    <h4 class="text-left" >Transformadores en general:</h4>
+    				<ul class="text-left">
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Factor de potencia y capacidad de la aislación.</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Razón de transformación.</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Resistencia de enrollados.</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Resistencia de aislación e índice de polarización.</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Razón, polaridad y resistencia de transformadores de corriente.</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Pruebas a circuito de control y accesorios.</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Medición de aisladores y pararrayos.</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Balance magnético.</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Descargas parciales</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Impedancia de cortocircuito.</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Reactancia de dispersión.</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Pérdidas en carga y en vacío.</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Voltaje aplicado.</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> SFRA (Barrido de frecuencia)</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Ruido</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Pruebas de precisión en TP’s y TC’s</li>
     				</ul>
     			</div>
     			<div class="col-md-4">
-    				<ul>
-    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
-    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
-    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
-    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
-    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
-    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+                    <h4 class="text-left">Equipos de maniobra y protección en general:</h4>
+    				<ul class="text-left">
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Resistencia de aislación.</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Simultaneidad de contacto.</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Resistencia de contacto./li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Ajustes de protección</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Pruebas a circuito de control y accesorios.</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Pruebas de operación.</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Voltaje aplicado</li>
     				</ul>
     			</div>
     			<div class="col-md-4">
-    				<ul>
-    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
-    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
-    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
-    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
-    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
-    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> lorem ipsum</li>
+                    <h4 class="text-left">Medidas generales:</h4>
+    				<ul class="text-left">
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Descargas parciales en Motores y Generadores.</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Mallas a tierra.</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Acoplamientos de malla a tierra.</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Calidad de energía.</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Mantenimientos preventivos de equipos eléctricos (Transformadores, CCM, CDC,Tableros, Switchgear, Motores y Generadores)</li>
+    					<li><i class="fa fa-chevron-right" aria-hidden="true"></i> Montaje y puesta de equipos eléctricos.</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Diagnóstico y Pruebas Eléctricas.</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Inspección y Mantenimiento de CDBC.</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Reemplazo de CDBC.</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Pruebas a interruptores.</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Reparaciones transformadores y generadores.</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Inspección de pruebas FAT</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Toma de muestras de aceite.</li>
     				</ul>
     			</div>
     		</div>
     	</div>
     </section>
-    <section id="video">
+    <section id="servicios2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="text-center">NUESTROS SERVICIOS</h3>
+                    <h2 class="text-center">SERVICIOS FABRICA</h2>
+                    <br>
+                    <p class="text-center">Se cuenta con equipamiento y personal calificado para realizar las siguientes actividades:</p>
+                </div>
+                <div class="col-md-4">
+                    <ul class="text-left">
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Diseño y fabricación transformadores de poder hasta 5000kVA y 36kV</li> 
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Revisión y desarrollo de Especificaciones técnicas.</li> 
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Revisión y desarrollo de memorias de cálculos.</li> 
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="text-left">
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Memoria de Cálculos Sísmicos.</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Memoria Cálculo de esfuerzos mecánicos de cortocircuito.</li> 
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Estudios de sobrecargas.</li> 
+                        
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="text-left">
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Servicios de consultoría.</li>
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Capacitación y entrenamiento.</li> 
+                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i> Análisis de fallas y estudios de transformadores en falla.</li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section id="video">
     	<div class="container">
          <div class="row">
             <div class="col-md-12">
@@ -87,8 +175,8 @@
              </div>
          </div>   
         </div>
-    </section>
-    <footer style="padding-top: 23px;">
+    </section-->
+    <footer>
     	<div class="container-fluid">
     		<div class="row">
     			<div class="col-md-4">
@@ -113,6 +201,12 @@
     		</div>
     	</div>
     </footer>
-    <script src="/dist/build.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript" src="js/validacion.js"></script>
+    <script type="text/javascript" src="js/enviar.js"></script>
+    <script src="js/animations.min.js"></script>
+    <!--script src="/dist/build.js"></script-->
   </body>
 </html>
