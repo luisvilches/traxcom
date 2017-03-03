@@ -15,7 +15,7 @@
 	$mensaje .= "Mensaje: " . $msg . " \r\n";
 	$mensaje .= "". " \r\n";
 	$mensaje .= "Enviado el " . date('d/m/Y', time());
-	$para = 'lvilches21@gmail.com';
+	$para = 'contacto@traxcom.cl';
 	$asunto = $asunto;
 	mail($para, $asunto, utf8_decode($mensaje), $header);
 	echo 'success'

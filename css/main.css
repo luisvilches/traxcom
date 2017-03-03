@@ -196,6 +196,60 @@ iframe{
 	.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
 	    max-height: 390px !important;
 	}
+	#servicios h3, #servicios2 h3 {
+		font-size: 35px !important;
+	}
+	#servicios h2{
+		font-size: 50px;
+	}
+	#servicios p{
+		font-size: 25px;
+	}
+	#servicios h4{
+		margin-top: 20px;
+		font-size: 40px;
+	}
+	#servicios ul li, #servicios2 ul li{
+		font-size: 30px;
+	}
+	#servicios2 h3{
+		font-size: 35px !important;
+	}
+	#servicios2 h2{
+		font-size: 50px;
+	}
+	#servicios2 p{
+		font-size: 25px;
+	}
+	#servicios2 h4{
+		margin-top: 20px;
+		font-size: 40px;
+	}
+	#servicios2 ul li{
+		font-size: 30px;
+	}
+	#video h3{
+		font-size: 35px !important;
+	}
+	#video h2{
+		font-size: 50px;
+	}
+	#video p{
+		font-size: 25px;
+	}
+	#video h4{
+		margin-top: 20px;
+		font-size: 40px;
+	}
+	#video ul li{
+		font-size: 30px;
+	}
+	footer h3{
+		font-size: 50px;
+	}
+	footer ul li{
+		font-size: 30px;
+	}
 }
 
 .bt{
